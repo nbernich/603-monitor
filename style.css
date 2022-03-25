@@ -16,13 +16,22 @@ img {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: -.5rem;
 }
 
+h1[role="finished"] {
+    font-size: 6rem;
+}
+
 h2 {
     font-size: 2rem;
+}
+
+h2[role="finished"] {
+    font-size: 3rem;
+    margin-top: .5rem;
 }
 
 table {
@@ -42,15 +51,19 @@ span[class=color] {
     font-size: 12rem;
     font-weight: 900;
     margin-top: -2rem;
-    margin-bottom: -2rem;
+    margin-bottom: -1rem;
 }
 
-/* Unit Indicators */
+#timer span {
+    position: relative;
+}
 
-#days::after, #hours::after, #minutes::after, #seconds::after {
-    position: absolute;
-    transform: translate(-10rem, 12rem);
+#timer span:after {
     font-size: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    right: 0%;
 }
 
 #days::after {
