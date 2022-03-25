@@ -8,8 +8,8 @@ window.onload = async ()=> {
     // Set target time
     let target = new Date();
     target.setFullYear(2022, 3, 8);
-    target.setHours(14);
-    target.setMinutes(46);
+    target.setHours(0);
+    target.setMinutes(0);
     target.setSeconds(0);
     target.setMilliseconds(0);
 
